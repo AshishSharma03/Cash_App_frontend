@@ -21,9 +21,10 @@ const NavLinks = [
   "Codeblog",
 ];
 
-function Navbar() {
+function Navbar({position}) {
   return (
-    <AppBar sx={{ background: "none", boxShadow: "none" }}>
+    <AppBar position={position}sx={{ background: "none", boxShadow: "none" }}>
+     
       <Box
         sx={{
           padding: "24px 60px",
