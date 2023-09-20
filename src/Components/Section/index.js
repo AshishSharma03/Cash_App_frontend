@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
 
-function Section({ children, bgcolor }) {
+function Section({ children, bgcolor ,zIndex}) {
   return (
     <Box
       component={"section"}
@@ -16,7 +16,8 @@ function Section({ children, bgcolor }) {
         display:"flex",
         alignItems:"center",
         justifyContent:'center',
-        position:"relative"
+        position:"relative",
+        zIndex:zIndex
       }}
     >
       {children}

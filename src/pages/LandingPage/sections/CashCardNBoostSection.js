@@ -4,9 +4,9 @@ import { Box,Stack } from '@mui/material'
 import CustomTypography, { fontColorStanderd, fontStanderd } from '../../../Components/CustomTypography'
 
 
-function CashCardNBoostSection() {
+function CashCardNBoostSection({zIndex}) {
   return (
-    <Section  bgcolor={"primary"} >
+    <Section  bgcolor={"primary"}  zIndex={zIndex}>
       <Box  
           component={"img"}
           src="./assets/boost-phone.svg"

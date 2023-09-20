@@ -11,12 +11,12 @@ import Navbar from "../../Components/Navbar";
 
 function LandingPage() {
   return (
-    <Box component={"div"}>
+    <Box component={"div"} sx={{position:"relative"}}>
         <Navbar/> 
         <HeroSection/>
         <PaymentsSection/>
         <BankingSection/>
-        <CashCardNBoostSection/>
+        <CashCardNBoostSection zIndex={1}/>
          <Investing/>
     </Box>
   );
