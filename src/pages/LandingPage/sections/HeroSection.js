@@ -68,7 +68,7 @@ function HeroSection() {
         />
         <Box
           component={"img"}
-          src="./assets/vector.svg"
+          src="./assets/Vector.svg"
           sx={{ position: "absolute", zIndex: 0, width: "100%" }}
         />
         <Box

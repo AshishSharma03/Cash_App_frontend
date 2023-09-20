@@ -32,7 +32,7 @@ function Navbar() {
           alignItems: "center",
         }}
       >
-        <Box component={"img"} src="./assets/Logo.svg" />
+        <Box component={"img"} src="./assets/logo.svg" />
         <Box component={"span"} sx={{ flex: 1 }} />
         <Box
           component={"div"}
