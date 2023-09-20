@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import React from "react";
 
-function CustomButton({ title, icon, onClick ,bgColor,color}) {
+function CustomButton({ title, icon, onClick ,bgColor,color,display,width}) {
   return (
     <Button
 
@@ -19,6 +19,8 @@ function CustomButton({ title, icon, onClick ,bgColor,color}) {
         height: "50px",
         color:color,
         fontSize:"12px",
+        display:display,
+        width:width,
       }}
       startIcon={ icon}
     >

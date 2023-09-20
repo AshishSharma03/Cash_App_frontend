@@ -33,7 +33,7 @@ function LandingPage() {
     <Box component={"div"} sx={{position:"relative",background:"#000"}}>
         <Navbar position={(scrollPosition > 100)? "Static":"fixed"}/> 
         <HeroSection/>
-        <PaymentsSection/>
+         <PaymentsSection/>
         <BankingSection/>
         <CashCardNBoostSection zIndex={1}/>
          <Investing/>
