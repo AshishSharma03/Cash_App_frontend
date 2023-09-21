@@ -8,7 +8,7 @@ import CustomTypography, {
 
 function BankingSection() {
   return (
-    <Section bgcolor={"secondary"}>
+    <Section id="section3" bgcolor={"secondary"}>
       <Box
         component={"img"}
         src="./assets/banking-phone.svg"

@@ -1,9 +1,10 @@
 import { Box } from "@mui/material";
 import React from "react";
 
-function Section({ children, bgcolor ,zIndex}) {
+function Section({ children, bgcolor ,zIndex,id}) {
   return (
     <Box
+      id={id}
       component={"section"}
       minHeight={"100vh"}
       sx={{

@@ -4,15 +4,16 @@ import CustomTypography, {
   fontColorStanderd,
   fontStanderd,
 } from "../../../Components/CustomTypography";
-
+import motion from 'framer-motion'
 function PaymentsSection() {
   return (
-    <Section>
+    <Section id={"section2"}>
       <Box
         component={"img"}
         src="./assets/vector2.svg"
         sx={{ position: "absolute", zIndex: 1, bottom: "21px", width: "100%" }}
       />
+     
       <Box
         component={"img"}
         src="./assets/payments-phone-1.svg"

@@ -12,7 +12,7 @@ import { FaGooglePlay } from "react-icons/fa";
 import { ImTwitch } from "react-icons/im";
 import { BsArrowDown } from "react-icons/bs";
 import CustomButton from "../../../Components/CustomButton";
-
+import { motion } from 'framer-motion';
 const SocialIcons = [
   {
     id: "0",
@@ -29,8 +29,13 @@ const SocialIcons = [
 ];
 
 function HeroSection() {
+  const scrollToElement = () => {
+    const element = document.getElementById('section2');
+    element.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
-    <Section bgcolor={"primary"}>
+    <Section id="section1" bgcolor={"primary"}>
+       
       <Stack
         direction={"column"}
         width={"100%"}
@@ -47,7 +52,7 @@ function HeroSection() {
         >
           Cash
         </CustomTypography>
-
+        
         <CustomTypography
           fontType={fontStanderd.Highlight}
           fontSize={{ lg: "193px", md: "180px", sm: "150px", xs: "80px" }}
@@ -56,7 +61,9 @@ function HeroSection() {
         >
           App
         </CustomTypography>
+      
       </Stack>
+     
       <Stack
         sx={{
           position: "absolute",
@@ -100,6 +107,7 @@ function HeroSection() {
           ))}
         </Stack>
         <IconButton
+        onClick={scrollToElement}
           color="primary"
           sx={{
             display: { lg: "none", md: "block", xs: "block", sm: "block " },
@@ -109,17 +117,29 @@ function HeroSection() {
           <BsArrowDown />
         </IconButton>
       </Stack>
-
+      <motion.div
+      style={{
+        position: "absolute",
+        zIndex: 1 ,
+      }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.5,
+          ease: [0, 0.71, 0.2, 1.01]
+        }}
+        >
       <Box
         component={"img"}
         src="./assets/intro-phone1.svg"
         sx={{
-          position: "absolute",
-          zIndex: 1,
+          // position: "absolute",
+          // zIndex: 1,
           width: { xs: "160px", sm: "226px", md: "380px", lg: "453px" },
         }}
       />
-
+</motion.div>
       <Box
         component={"img"}
         src="./assets/Vector.svg"
@@ -193,7 +213,9 @@ function HeroSection() {
           alignItems: "center",
         }}
       >
+          
         <IconButton
+        onClick={scrollToElement}
           color="primary"
           sx={{
             position: "absolute",

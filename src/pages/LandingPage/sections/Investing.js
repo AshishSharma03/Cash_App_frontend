@@ -34,7 +34,7 @@ const SocialIcons = [
 
 function Investing() {
   return (
-    <Section bgcolor={"secondary"}>
+    <Section id="section5" bgcolor={"secondary"}>
       <CustomTypography
         fontType={fontStanderd.Highlight}
         fontSize={"40px"}

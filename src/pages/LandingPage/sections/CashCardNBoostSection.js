@@ -8,7 +8,7 @@ import CustomTypography, {
 
 function CashCardNBoostSection({ zIndex }) {
   return (
-    <Section bgcolor={"primary"} zIndex={zIndex}>
+    <Section id="section4" bgcolor={"primary"} zIndex={zIndex}>
       <Box
         component={"img"}
         src="./assets/boost-phone.svg"
