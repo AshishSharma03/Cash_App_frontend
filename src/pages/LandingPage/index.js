@@ -28,15 +28,14 @@ function LandingPage() {
     };
   }, []);
 
-  console.log(scrollPosition)
   return (
     <Box component={"div"} sx={{position:"relative",background:"#000"}}>
-        <Navbar position={(scrollPosition > 100)? "Static":"fixed"}/> 
+        <Navbar position={(scrollPosition > 100)? "static":"fixed"}/> 
         <HeroSection/>
-         {/* <PaymentsSection/>
-        <BankingSection/>
-        <CashCardNBoostSection zIndex={1}/>
-         <Investing/> */}
+         <PaymentsSection/>
+       <BankingSection/>
+          <CashCardNBoostSection zIndex={1}/>
+        <Investing/>
     </Box>
   );
 }

@@ -7,6 +7,7 @@ function CustomButton({ title, icon, onClick ,bgColor,color,display,width}) {
 
       color="success"
       onClick={onClick}
+      size="small"
       sx={{
         background: bgColor,
         padding: "10px",
