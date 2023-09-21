@@ -1,9 +1,6 @@
 import {
   AppBar,
-  Menu,
   MenuItem,
-  Typography,
-  Toolbar,
   Box,
   IconButton,
   Drawer,
@@ -11,7 +8,6 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import CustomTypography, {
-  fontColorStanderd,
   fontStanderd,
 } from "../CustomTypography";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -68,7 +64,7 @@ function Navbar({ position }) {
           component={"div"}
           width={"100%"}
           sx={{
-            display: "flex",
+  
             gap: "20px",
             display: { xs: "none", sm: "none", md: "flex" },
             justifyContent: "center",

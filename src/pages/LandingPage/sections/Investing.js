@@ -13,6 +13,10 @@ import {
   AiOutlineTwitter,
   AiOutlineInstagram,
 } from "react-icons/ai";
+
+
+
+
 const SocialIcons = [
   {
     id: "0",
@@ -84,7 +88,7 @@ function Investing() {
         }}
       >
         <Stack
-          width={{ lg: "50%", md: "50%", sm: "50%", sm: "100%" }}
+          width={{ lg: "50%", md: "50%", sm: "50%", xs: "100%" }}
           direction={{ lg: "row", md: "row", sm: "row", xs: "row" }}
           justifyContent={{
             lg: "right",
@@ -128,7 +132,7 @@ function Investing() {
           />
         </Stack>
         <Stack
-          width={{ lg: "50%", md: "50%", sm: "50%", sm: "100%" }}
+          width={{ lg: "50%", md: "50%", sm: "50%", xs: "100%" }}
           direction={{ lg: "row", md: "row", sm: "row", xs: "row" }}
           justifyContent={{ lg: "left", md: "left", sm: "left", xs: "center" }}
           gap={{ lg: "37px", md: "37px", sm: "10px", xs: "5px" }}
@@ -265,6 +269,32 @@ function Investing() {
           width: { lg: "408px", md: "408px", sm: "200px", xs: "200px" },
         }}
       />
+  <Stack direction={"column"}  gap="20px" sx={{alignItems:'center',justifyContent:"center",position:"absolute",zIndex:2,bottom:"120px",display:{lg:"none",md:"none",sm:"flex",xs:"none"}}}>
+        <Stack direction={"row"}  gap="10px" >
+      <CustomButton
+ 
+          title={"App store"}
+          bgColor={"#fff"}
+          color={"#000"}
+          icon={<AiFillApple style={{ color: "#00D54B", fontSize: "15px" }} />}
+          />
+        <CustomButton
+       
+          title={"Google play"}
+          bgColor={"#fff"}
+          color={"#000"}
+          icon={<FaGooglePlay style={{ color: "#00D54B", fontSize: "15px" }} />}
+          />
+          </Stack>
+          <Stack direction={"row"}>
+        {SocialIcons.map((a, i) => (
+          <IconButton key={i} sx={{ color: "#000 " }}>
+              {a.icon}
+            </IconButton>
+          ))}
+
+          </Stack>
+    </Stack>
     </Section>
   );
 }
